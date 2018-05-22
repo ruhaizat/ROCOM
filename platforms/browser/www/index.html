@@ -45,7 +45,6 @@
             <p>Home</p>
             <p>Ride</p>
             <p>List</p>
-            <p>Analysis</p>
             <p>Setting</p>
         </div>
     </div>
@@ -75,9 +74,8 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-							<div class="navbar">
-								<div class="navbar-inner">
-									<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+							<div class="header">
+								<div class="header-inner">
 									<div class="center">Summary</div>
 								</div>
 							</div>
@@ -107,9 +105,8 @@
 									</td>
 								</tr>
 							</table>
-							<div class="navbar">
-								<div class="navbar-inner">
-									<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+							<div class="header">
+								<div class="header-inner">
 									<div class="center">Last Ride</div>
 								</div>
 							</div>
@@ -132,8 +129,6 @@
 									</td>
 								</tr>
 							</table>
-                            <!--<p>Page content goes here</p>
-                            <a href="about.html">About app</a>-->
                         </div>
                     </div>
                 </div>
@@ -142,10 +137,9 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a href="#" class="link active">Home</a>
-                    <a href="#" class="link">Ride</a>
+                    <a href="index.html" class="link active">Home</a>
+                    <a href="ride.html" class="link">Ride</a>
                     <a href="#" class="link">List</a>
-                    <a href="#" class="link">Analysis</a>
                     <a href="#" class="link">Setting</a>
                 </div>
             </div>
@@ -155,6 +149,6 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMhjC-7qyJfotZ5L0NIeB5sTBmYQ0cNAo" async defer></script>        
 </body>
-
 </html>

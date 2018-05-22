@@ -1,0 +1,53 @@
+
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding"><img src="img/newLogoClear.png" style="width:30%;margin-left:40%;"/></div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="ride" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+							<table style="width:100%;">
+								<tr>
+									<td>
+										<div class="divBlock" style="background-color:#a2c4c9;">
+											<div>Total<br/>Distance<br/><strong>00 KM</strong></div>
+										</div>
+									</td>
+									<td>
+										<div class="divBlock" style="background-color:#a4c2f4;">
+											<div>Total<br/>Duration<br/><strong>00:00</strong></div>
+										</div>
+									</td>
+									<td>
+										<div class="divBlock" style="background-color:#f9cb9c;">
+											<div>Total<br/>Anomaly<br/><strong>00</strong></div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<table class="tbmap">
+								<tr>
+									<td>
+										<div id="map" class="map">
+										</div>
+									</td>
+								</tr>
+							</table>
+                        </div>
+                    </div>
+                </div>
+            </div>
