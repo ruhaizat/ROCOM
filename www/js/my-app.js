@@ -16,11 +16,26 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 });
 
+myApp.onPageInit('index', function (page) {
+	$$('.link').removeClass('active');
+	$$('#aHome').addClass('active');
+})
+
 myApp.onPageInit('ride', function (page) {
-    // Do something here for "about" page
-    myApp.alert("test");
+	$$('.link').removeClass('active');
+	$$('#aRide').addClass('active');
     map = new google.maps.Map(document.getElementById('map'), {
     	center: {lat: 2.9772081, lng: 101.7960628},
     	zoom: 18
     });
+})
+
+myApp.onPageInit('list', function (page) {
+	$$('.link').removeClass('active');
+	$$('#aList').addClass('active');
+})
+
+myApp.onPageInit('setting', function (page) {
+	$$('.link').removeClass('active');
+	$$('#aSetting').addClass('active');
 })
