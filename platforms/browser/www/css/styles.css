@@ -128,7 +128,7 @@ body {
 }
 .active {
 	color: #ffb807;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .tbSetting {
 	width:100%;

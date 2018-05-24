@@ -15,6 +15,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "my.gov.miros.rocom"
+    },
+    "cordova-plugin-camera-preview": {
+      "PACKAGE_NAME": "my.gov.miros.rocom"
     }
   },
   "dependent_plugins": {}

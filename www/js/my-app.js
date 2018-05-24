@@ -39,3 +39,13 @@ myApp.onPageInit('setting', function (page) {
 	$$('.link').removeClass('active');
 	$$('#aSetting').addClass('active');
 })
+
+myApp.onPageInit('info', function (page) {
+	$$('.link').removeClass('active');
+})
+
+function viewCamera(){
+	myApp.alert('test');
+	CameraPreview.startCamera({x: 50, y: 50, width: 300, height: 300, toBack: false, previewDrag: true, tapPhoto: true});
+	myApp.alert('test2');
+}

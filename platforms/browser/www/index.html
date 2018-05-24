@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7-icons.css">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -56,14 +57,21 @@
             <!-- Top Navbar-->
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding"><img src="img/newLogoClear.png" style="width:30%;margin-left:40%;"/></div>
-                    <div class="right">
+                    <div class="left">
                         <!--
                           Right link contains only icon - additional "icon-only" class
                           Additional "open-panel" class tells app to open panel when we click on this link
                         -->
                         <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding"><img src="img/newLogoClear.png" style="width:30%;margin:auto;"/></div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="info.html" class="icon-only"><i class="f7-icons size-25">info</i></a>
                     </div>
                 </div>
             </div>
@@ -137,10 +145,10 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a id="aHome" href="index.html" class="link active">Home</a>
-                    <a id="aRide" href="ride.html" class="link">Ride</a>
-                    <a id="aList" href="list.html" class="link">List</a>
-                    <a id="aSetting" href="setting.html" class="link">Setting</a>
+                    <a id="aHome" href="index.html" class="link active"><i class="f7-icons size-25">home</i>&nbsp;Home</a>
+                    <a id="aRide" href="ride.html" class="link"><i class="f7-icons size-25">play</i>&nbsp;Ride</a>
+                    <a id="aList" href="list.html" class="link"><i class="f7-icons size-25">list</i>&nbsp;List</a>
+                    <a id="aSetting" href="setting.html" class="link"><i class="f7-icons size-25">settings</i>&nbsp;Setting</a>
                 </div>
             </div>
         </div>
@@ -149,6 +157,7 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/CameraPreview.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMhjC-7qyJfotZ5L0NIeB5sTBmYQ0cNAo" async defer></script>        
 </body>
 </html>
